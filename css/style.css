@@ -20,6 +20,10 @@ p {
     font-size: 14px;
     font-weight: 400;
     color: #8993ad;
+    border-radius: 0 0 15px 15px;
+    background-color: #ffffff;
+    min-height: 85px;
+    box-sizing: border-box;
 }
 
 form {
@@ -45,6 +49,7 @@ input {
     background-color: #fcfcfc;
     border: 1px solid #ebebeb;
     margin-bottom: 25px;
+    padding: 0 10px;
 }
 
 textarea {
@@ -68,10 +73,15 @@ textarea {
 }
 
 .list-true-title {
+    min-height: 50px;
     font-size: 16px;
     font-weight: 400;
     padding: 18px 20px;
-    border-bottom: 1px solid #ebebeb;;
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0 0;
 }
 
 .list-false-title {
@@ -84,10 +94,20 @@ textarea {
 
 .item {
     width: 100%;
-    min-height: 136px;
-    background-color: #ffffff;
-    border-radius: 15px;
     margin-bottom: 16px;
+}
+
+.btn-close {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.arrow-hide {
+    position: absolute;
+    right: 26px;
+    top: 29px;
+    cursor: pointer;
+    /* transform: rotate(90deg); */
 }
 
 .btn-add {
@@ -99,4 +119,8 @@ textarea {
     font-weight: 400;
     border: none;
     border-radius: 10px;
+}
+
+.list-wrapper {
+    min-height: 500px;
 }
